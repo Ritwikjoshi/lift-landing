@@ -1,0 +1,129 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout 
+  title="Privacy Policy — LIFT Due Diligence Operating System" 
+  description="Privacy and data protection protocols governing institutional financial due diligence, cap table data, and venture records on LIFT."
+>
+  <Navbar />
+  <main class="flex-1 py-16 sm:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Header -->
+      <div class="mb-12 border-b border-white/10 pb-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
+          Institutional Governance
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-bold text-white font-heading tracking-tight">
+          Privacy & Data Protection Policy
+        </h1>
+        <p class="mt-4 text-slate-400 text-sm sm:text-base">
+          Effective Date: September 2026 · Operated by GGAM Advisory & LIFT OS
+        </p>
+      </div>
+
+      <!-- Content Sections -->
+      <div class="space-y-10 text-slate-300 text-sm sm:text-base leading-relaxed">
+        
+        <section class="glass-panel rounded-2xl p-6 sm:p-8 border border-white/5 space-y-4">
+          <h2 class="text-xl font-bold text-white font-heading flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+            1. Institutional Commitment & Scope
+          </h2>
+          <p>
+            LIFT ("we," "our," or "the Platform"), operated under GGAM Advisory, provides an enterprise-grade due diligence operating system. This policy governs how financial statements, MCA corporate records, cap tables, intellectual property escrow files, and commercial contracts are ingested, processed, and protected.
+          </p>
+          <p>
+            We operate strictly as a data processor and fiduciary facilitator for accredited investment committees, verified startup incubators, and participating founders. We never monetize, aggregate, or train public AI models on private deal room data.
+          </p>
+        </section>
+
+        <section class="glass-panel rounded-2xl p-6 sm:p-8 border border-white/5 space-y-4">
+          <h2 class="text-xl font-bold text-white font-heading flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+            2. Data We Ingest and Process
+          </h2>
+          <ul class="list-disc pl-5 space-y-2 text-slate-300">
+            <li><strong class="text-white">Corporate & Cap Table Data:</strong> Shareholding structures, MCA filings, founder identification credentials, board resolutions, and ESOP pool allocations.</li>
+            <li><strong class="text-white">Financial & Tax Records:</strong> Audited P&L, balance sheets, GST/tax reconciliation reports, bank statements, and financial projections.</li>
+            <li><strong class="text-white">Legal & Material Contracts:</strong> Employment agreements, intellectual property assignment covenants, vendor master contracts, and non-disclosure instruments.</li>
+            <li><strong class="text-white">Telemetry & Access Logs:</strong> Immutable timestamped logs of document downloads, view durations, and analyst query interactions for compliance audits.</li>
+          </ul>
+        </section>
+
+        <section class="glass-panel rounded-2xl p-6 sm:p-8 border border-white/5 space-y-4">
+          <h2 class="text-xl font-bold text-white font-heading flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+            3. Cryptographic Isolation & Security Architecture
+          </h2>
+          <p>
+            All venture files uploaded into the LIFT Startup Data Room (<code class="text-indigo-300 bg-indigo-950/60 px-1.5 py-0.5 rounded font-mono text-xs">app.lift.business</code>) are immediately encrypted using AES-256 at rest and TLS 1.3 in transit.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-slate-900/60 border border-white/5">
+              <div class="text-xs font-semibold text-white uppercase tracking-wider mb-1">Zero Cross-Tenant Leakage</div>
+              <p class="text-xs text-slate-400">Each venture repository exists inside isolated database partitions and encrypted storage buckets.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-900/60 border border-white/5">
+              <div class="text-xs font-semibold text-white uppercase tracking-wider mb-1">Dynamic Watermarking</div>
+              <p class="text-xs text-slate-400">All document preview renders embed viewer email, IP address, and microsecond timestamps to deter unauthorized leaks.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="glass-panel rounded-2xl p-6 sm:p-8 border border-white/5 space-y-4">
+          <h2 class="text-xl font-bold text-white font-heading flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+            4. Role-Based Access Control (RBAC) & Disclosure
+          </h2>
+          <p>
+            Access to data room contents is strictly role-governed:
+          </p>
+          <ul class="list-disc pl-5 space-y-2 text-slate-300">
+            <li><strong class="text-white">Founders:</strong> Complete management, revocation privileges, and real-time audit views over who has accessed their documents.</li>
+            <li><strong class="text-white">Incubator Directors:</strong> Cohort readiness benchmarks and aggregated compliance checklists without unauthorized deep file downloads unless explicitly granted.</li>
+            <li><strong class="text-white">GGAM Advisory Analysts & Partners:</strong> Scoped deal room access for investment committee dossier preparation, restricted by multi-factor authentication (MFA).</li>
+          </ul>
+        </section>
+
+        <section class="glass-panel rounded-2xl p-6 sm:p-8 border border-white/5 space-y-4">
+          <h2 class="text-xl font-bold text-white font-heading flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+            5. Data Retention & Fiduciary Purge Rights
+          </h2>
+          <p>
+            Upon closing or discontinuation of a diligence workflow, founders and venture leads hold the unilateral right to trigger a cryptographic data purge or escrow transfer. Inactive deal rooms are permanently archived or deleted based on statutory compliance mandates.
+          </p>
+        </section>
+
+        <section class="glass-panel rounded-2xl p-6 sm:p-8 border border-white/5 space-y-4">
+          <h2 class="text-xl font-bold text-white font-heading flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+            6. Regulatory Contact & Data Protection Officer
+          </h2>
+          <p>
+            For inquiries regarding institutional compliance, audit verification logs, or data rights:
+          </p>
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-white/5 text-xs sm:text-sm font-mono text-slate-300">
+            <p>Data Protection & Governance Office</p>
+            <p class="mt-1">GGAM Advisory / LIFT OS Institutional Operations</p>
+            <p class="mt-1 text-indigo-400">compliance@lift.business</p>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Return Link -->
+      <div class="mt-12 pt-8 border-t border-white/10 text-center">
+        <a href="/" class="inline-flex items-center gap-2 text-sm text-indigo-400 hover:text-indigo-300 font-medium transition-colors">
+          &larr; Back to LIFT Home
+        </a>
+      </div>
+
+    </div>
+  </main>
+  <Footer />
+</Layout>
