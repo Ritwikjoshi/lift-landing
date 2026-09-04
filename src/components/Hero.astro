@@ -1,193 +1,240 @@
 ---
+// src/components/Hero.astro
 ---
 
-<section class="relative pt-24 pb-20 md:pt-36 md:pb-32 overflow-hidden">
+<section class="relative pt-20 pb-20 md:pt-32 md:pb-28 overflow-hidden">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <!-- Top Announcement Pill -->
+    
+    <!-- Eyebrow Tag -->
     <div class="flex justify-center mb-8">
-      <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full glass-panel border border-indigo-500/20 text-xs font-medium text-indigo-300 hover:border-indigo-500/40 transition-all shadow-[0_0_20px_rgba(99,102,241,0.15)] cursor-default">
+      <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/25 text-xs font-semibold tracking-wider uppercase text-indigo-300 shadow-[0_0_25px_rgba(99,102,241,0.15)]">
         <span class="flex h-2 w-2 relative">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
           <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
         </span>
-        <span>Institutional-Grade AI Due Diligence Operating System</span>
-        <svg class="w-3.5 h-3.5 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
+        <span>SMART DUE DILIGENCE PLATFORM</span>
       </div>
     </div>
 
-    <!-- Main Headline -->
+    <!-- Editorial Headline -->
     <div class="text-center max-w-4xl mx-auto">
       <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white font-heading leading-[1.1]">
-        Institutional Due Diligence.
+        Smart Due Diligence.
         <span class="block mt-2 bg-gradient-to-r from-indigo-300 via-purple-300 to-blue-300 bg-clip-text text-transparent">
-          Accelerated by Intelligence.
+          Accelerated.
         </span>
       </h1>
-      <p class="mt-6 text-lg sm:text-xl text-slate-300 font-normal max-w-2xl mx-auto leading-relaxed">
-        The unified operating platform connecting <span class="text-white font-medium">GGAM Capital</span>, <span class="text-white font-medium">Premier Incubators</span>, and <span class="text-white font-medium">Breakthrough Ventures</span> with automated risk scoring and airtight auditability.
+      
+      <p class="mt-6 text-base sm:text-xl text-slate-300 font-normal max-w-3xl mx-auto leading-relaxed">
+        LIFT brings your DD checklist, data room, experts, queries, risks and reporting into one connected workflow—helping teams reduce coordination, surface findings earlier and move from information to decision faster.
       </p>
 
-      <!-- CTA Action Row -->
+      <!-- CTA Row -->
       <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#portals" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-sm bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 text-white shadow-[0_0_30px_rgba(99,102,241,0.5)] hover:shadow-[0_0_45px_rgba(99,102,241,0.8)] hover:scale-[1.02] transition-all flex items-center justify-center gap-2">
-          <span>Launch Platform Portals</span>
+        <a href="/contact?intent=start-dd" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-sm bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 text-white shadow-[0_0_30px_rgba(99,102,241,0.5)] hover:shadow-[0_0_45px_rgba(99,102,241,0.8)] hover:scale-[1.02] transition-all flex items-center justify-center gap-2">
+          <span>Start a DD</span>
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
         </a>
-        <a href="#simulator" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-sm glass-panel border border-white/10 hover:border-white/20 text-slate-200 hover:text-white hover:bg-white/5 transition-all flex items-center justify-center gap-2">
-          <span>Simulate Due Diligence Score</span>
+
+        <a href="/contact?intent=demo" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-sm glass-panel border border-white/10 hover:border-white/20 text-slate-200 hover:text-white hover:bg-white/5 transition-all flex items-center justify-center gap-2">
+          <span>Book a Demo</span>
           <svg class="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
           </svg>
         </a>
       </div>
 
-      <!-- Trust Metrics Bar -->
-      <div class="mt-16 pt-10 border-t border-white/[0.06] grid grid-cols-2 md:grid-cols-4 gap-8">
-        <div>
-          <div class="text-2xl sm:text-3xl font-bold text-white font-heading tracking-tight">₹450Cr+</div>
-          <div class="text-xs font-medium text-slate-400 mt-1 uppercase tracking-wider">Pipeline Under Review</div>
-        </div>
-        <div>
-          <div class="text-2xl sm:text-3xl font-bold text-indigo-400 font-heading tracking-tight">94%</div>
-          <div class="text-xs font-medium text-slate-400 mt-1 uppercase tracking-wider">Faster Time-to-DD</div>
-        </div>
-        <div>
-          <div class="text-2xl sm:text-3xl font-bold text-purple-400 font-heading tracking-tight">50+</div>
-          <div class="text-xs font-medium text-slate-400 mt-1 uppercase tracking-wider">Automated Checkpoints</div>
-        </div>
-        <div>
-          <div class="text-2xl sm:text-3xl font-bold text-emerald-400 font-heading tracking-tight">100%</div>
-          <div class="text-xs font-medium text-slate-400 mt-1 uppercase tracking-wider">Institutional Audit Trail</div>
-        </div>
-      </div>
+      <p class="mt-4 text-xs text-slate-400">
+        Built for investors, corporates, founders and professional advisors.
+      </p>
     </div>
 
-    <!-- Visual Dashboard Sneak Peek Graphic -->
-    <div class="mt-16 max-w-5xl mx-auto">
-      <div class="relative rounded-2xl glass-panel-glow p-2.5 sm:p-4 shadow-[0_0_50px_rgba(0,0,0,0.8)] border border-indigo-500/20">
-        <!-- Mock Browser Header -->
-        <div class="flex items-center justify-between px-3 py-2 border-b border-white/10 mb-4 text-xs text-slate-400">
+    <!-- Section 10: Hero Visual — Interactive Product Animation Flow -->
+    <div class="mt-14 max-w-5xl mx-auto">
+      <div class="relative rounded-3xl glass-panel-glow p-4 sm:p-7 border border-indigo-500/25 shadow-[0_20px_60px_rgba(0,0,0,0.7)]">
+        
+        <!-- Window Mock Topbar -->
+        <div class="flex items-center justify-between pb-4 border-b border-white/10 text-xs text-slate-400">
           <div class="flex items-center gap-2">
             <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
             <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
             <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+            <span class="ml-2 text-[11px] font-mono text-slate-400">lift.business // dd-operating-canvas</span>
           </div>
-          <div class="bg-black/40 px-6 py-1 rounded-md text-[11px] text-slate-400 border border-white/5 font-mono">
-            lift.business // multi-portal-ecosystem
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span class="text-[11px] font-mono text-emerald-300">CONNECTED WORKFLOW ACTIVE</span>
           </div>
-          <div class="text-indigo-400 font-mono text-[10px]">LIVE ENCRYPTED</div>
         </div>
 
-        <!-- Dashboard Internal Grid Preview -->
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 p-2">
-          <!-- Left: Target Profile & Score -->
-          <div class="md:col-span-4 bg-slate-900/80 rounded-xl p-5 border border-white/5 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-4">
-                <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Target Enterprise</span>
-                <span class="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded-full">Phase: Legal Review</span>
-              </div>
-              <h3 class="text-lg font-bold text-white font-heading">TechFlow Robotics Pvt Ltd</h3>
-              <p class="text-xs text-slate-400 mt-1">Autonomous warehouse fulfillment hardware & software.</p>
+        <!-- Visual Flow Strip: Checklist -> Documents -> Experts -> Queries -> Findings -> Flash DD -> Decision -->
+        <div class="mt-6 mb-6">
+          <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-3 flex items-center justify-between">
+            <span>Diligence Value Chain (Live Progression)</span>
+            <span class="text-indigo-400 font-mono text-[10px]">7 Connected Nodes</span>
+          </div>
+
+          <!-- Process nodes horizontal flow -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2.5 text-center">
+            
+            <div class="p-3 rounded-xl bg-slate-900/90 border border-white/10 relative group">
+              <div class="text-[10px] font-mono text-indigo-400 mb-1">01. SCOPE</div>
+              <div class="text-xs font-semibold text-white">DD Checklist</div>
+              <div class="text-[10px] text-slate-400 mt-1">Structured templates</div>
             </div>
 
-            <div class="mt-6 pt-6 border-t border-white/10">
-              <div class="flex items-end justify-between mb-2">
-                <span class="text-xs text-slate-400">Overall Diligence Index</span>
-                <span class="text-2xl font-bold text-indigo-400 font-heading">88 / 100</span>
+            <div class="p-3 rounded-xl bg-slate-900/90 border border-white/10 relative group">
+              <div class="text-[10px] font-mono text-blue-400 mb-1">02. REPOSITORY</div>
+              <div class="text-xs font-semibold text-white">Documents</div>
+              <div class="text-[10px] text-slate-400 mt-1">Mapped data room</div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-slate-900/90 border border-white/10 relative group">
+              <div class="text-[10px] font-mono text-purple-400 mb-1">03. TALENT</div>
+              <div class="text-xs font-semibold text-white">Experts</div>
+              <div class="text-[10px] text-slate-400 mt-1">Multi-domain CA/CS/Law</div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-slate-900/90 border border-white/10 relative group">
+              <div class="text-[10px] font-mono text-cyan-400 mb-1">04. DIALOGUE</div>
+              <div class="text-xs font-semibold text-white">Queries</div>
+              <div class="text-[10px] text-slate-400 mt-1">Tracked conversations</div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-slate-900/90 border border-white/10 relative group">
+              <div class="text-[10px] font-mono text-amber-400 mb-1">05. EVIDENCE</div>
+              <div class="text-xs font-semibold text-white">Findings</div>
+              <div class="text-[10px] text-slate-400 mt-1">Prioritised risks</div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-slate-900/90 border border-white/10 relative group">
+              <div class="text-[10px] font-mono text-rose-400 mb-1">06. RADAR</div>
+              <div class="text-xs font-semibold text-white">Flash DD™</div>
+              <div class="text-[10px] text-slate-400 mt-1">Evolving insights</div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-slate-900/90 border border-emerald-500/30 col-span-2 sm:col-span-2 lg:col-span-1 bg-emerald-500/5">
+              <div class="text-[10px] font-mono text-emerald-400 mb-1">07. GOAL</div>
+              <div class="text-xs font-semibold text-emerald-300">Decision</div>
+              <div class="text-[10px] text-emerald-400/80 mt-1">IC-ready dossier</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Interactive Live DD Workspace Mockup -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 pt-4 border-t border-white/10">
+          
+          <!-- Left: Target Overview (Col 4) -->
+          <div class="lg:col-span-4 bg-slate-900/70 rounded-2xl p-4 border border-white/5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 font-mono">Diligence File</span>
+                <span class="text-[10px] px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 font-mono">Series A DD</span>
               </div>
-              <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
-                <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-full w-[88%] rounded-full"></div>
+              <div class="text-base font-bold text-white">TechFlow Robotics Pvt. Ltd.</div>
+              <div class="text-xs text-slate-400 mt-0.5">Manufacturing & Industrial Robotics Automation</div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-white/10 space-y-3">
+              <div>
+                <div class="flex justify-between text-xs mb-1">
+                  <span class="text-slate-400">DD Progress:</span>
+                  <span class="text-white font-mono font-bold">72% Completed</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                  <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-full w-[72%] rounded-full"></div>
+                </div>
               </div>
-              <div class="mt-3 flex items-center justify-between text-[11px] text-slate-400">
-                <span>Verified Docs: 38/42</span>
-                <span class="text-emerald-400">Low Risk Profile</span>
+              <div class="grid grid-cols-2 gap-2 text-[11px] pt-1">
+                <div class="p-2 rounded-lg bg-white/5">
+                  <span class="text-slate-400 block text-[10px]">Verified Files</span>
+                  <span class="text-white font-semibold font-mono">184 / 230</span>
+                </div>
+                <div class="p-2 rounded-lg bg-white/5">
+                  <span class="text-slate-400 block text-[10px]">Open Queries</span>
+                  <span class="text-amber-400 font-semibold font-mono">23 Pending</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Middle: Pillar Breakdown -->
-          <div class="md:col-span-5 bg-slate-900/80 rounded-xl p-5 border border-white/5 space-y-4">
-            <div class="flex justify-between items-center mb-1">
-              <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Diligence Pillars</span>
-              <span class="text-[10px] text-indigo-400">Auto-Validated</span>
+          <!-- Center: Multi-Domain Workstreams (Col 5) -->
+          <div class="lg:col-span-5 bg-slate-900/70 rounded-2xl p-4 border border-white/5 space-y-3">
+            <div class="flex justify-between items-center pb-2 border-b border-white/10 text-xs">
+              <span class="font-semibold text-slate-300 uppercase tracking-wider text-[10px]">Active Workstreams</span>
+              <span class="text-[10px] text-slate-400 font-mono">Assigned Experts</span>
             </div>
 
-            <div class="space-y-3">
-              <div>
-                <div class="flex justify-between text-xs mb-1">
-                  <span class="text-slate-300">Financial Integrity (P&L, Balance Sheet, GST)</span>
-                  <span class="text-white font-mono font-medium">94%</span>
+            <div class="space-y-2 text-xs">
+              <div class="flex items-center justify-between p-2 rounded-xl bg-white/5">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                  <span class="text-slate-200">Financial DD (P&L, Audit, Controls)</span>
                 </div>
-                <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-                  <div class="bg-indigo-500 h-full w-[94%]"></div>
-                </div>
+                <span class="text-xs text-white font-mono font-medium">82%</span>
               </div>
 
-              <div>
-                <div class="flex justify-between text-xs mb-1">
-                  <span class="text-slate-300">Corporate & Shareholding (Cap Table, MCA)</span>
-                  <span class="text-white font-mono font-medium">90%</span>
+              <div class="flex items-center justify-between p-2 rounded-xl bg-white/5">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-purple-400"></span>
+                  <span class="text-slate-200">Corporate & ROC (MCA, Cap Table)</span>
                 </div>
-                <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-                  <div class="bg-purple-500 h-full w-[90%]"></div>
-                </div>
+                <span class="text-xs text-white font-mono font-medium">90%</span>
               </div>
 
-              <div>
-                <div class="flex justify-between text-xs mb-1">
-                  <span class="text-slate-300">Intellectual Property & Patents</span>
-                  <span class="text-white font-mono font-medium">82%</span>
+              <div class="flex items-center justify-between p-2 rounded-xl bg-white/5">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+                  <span class="text-slate-200">Legal DD (Contracts, Litigation)</span>
                 </div>
-                <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-                  <div class="bg-blue-500 h-full w-[82%]"></div>
-                </div>
+                <span class="text-xs text-white font-mono font-medium">68%</span>
               </div>
 
-              <div>
-                <div class="flex justify-between text-xs mb-1">
-                  <span class="text-slate-300">Material Contracts & Litigation Scans</span>
-                  <span class="text-white font-mono font-medium">78%</span>
+              <div class="flex items-center justify-between p-2 rounded-xl bg-white/5">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+                  <span class="text-slate-200">Tech & Architecture (Stack, Scalability)</span>
                 </div>
-                <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-                  <div class="bg-amber-500 h-full w-[78%]"></div>
-                </div>
+                <span class="text-xs text-white font-mono font-medium">74%</span>
               </div>
             </div>
           </div>
 
-          <!-- Right: Live AI Flag Detection -->
-          <div class="md:col-span-3 bg-slate-900/80 rounded-xl p-5 border border-white/5 flex flex-col justify-between">
+          <!-- Right: Flash Risk Summary (Col 3) -->
+          <div class="lg:col-span-3 bg-slate-900/70 rounded-2xl p-4 border border-white/5 flex flex-col justify-between">
             <div>
-              <div class="flex items-center justify-between mb-4">
-                <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">AI Flag Stream</span>
-                <span class="flex h-2 w-2 rounded-full bg-emerald-400"></span>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 font-mono">Risk Register</span>
+                <span class="text-[10px] text-rose-400 font-mono">04 Critical</span>
               </div>
-              <div class="space-y-3">
-                <div class="p-2.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-[11px]">
-                  <div class="text-emerald-300 font-semibold">MCA Filings Reconciled</div>
-                  <div class="text-slate-400 mt-0.5 text-[10px]">Zero share capital discrepancy detected.</div>
+
+              <div class="space-y-2">
+                <div class="p-2 rounded-xl bg-rose-500/10 border border-rose-500/20 text-[11px]">
+                  <div class="text-rose-300 font-semibold">Customer Concentration</div>
+                  <div class="text-slate-400 text-[10px] mt-0.5">Top customer accounts for 54% of FY25 revenue.</div>
                 </div>
-                <div class="p-2.5 rounded-lg bg-amber-500/10 border border-amber-500/20 text-[11px]">
-                  <div class="text-amber-300 font-semibold">Non-Compete Clause Ambiguity</div>
-                  <div class="text-slate-400 mt-0.5 text-[10px]">Vendor SLA §4.2 requires advisory addendum.</div>
+                <div class="p-2 rounded-xl bg-amber-500/10 border border-amber-500/20 text-[11px]">
+                  <div class="text-amber-300 font-semibold">IP Assignment Covenant</div>
+                  <div class="text-slate-400 text-[10px] mt-0.5">Founder patent transfer requires deed confirmation.</div>
                 </div>
               </div>
             </div>
 
-            <div class="mt-4 pt-3 border-t border-white/10 text-center">
-              <a href="#simulator" class="text-[11px] text-slate-400 hover:text-white inline-flex items-center gap-1.5 transition-colors">
-                <span>View Full Audit Checkpoints</span>
+            <div class="pt-3 mt-3 border-t border-white/10 text-center">
+              <a href="#flash-dd" class="text-[11px] text-indigo-400 hover:text-indigo-300 inline-flex items-center gap-1 font-medium transition-colors">
+                <span>Inspect Flash DD™ Dashboard</span>
                 <span>&rarr;</span>
               </a>
             </div>
           </div>
+
         </div>
+
       </div>
     </div>
+
   </div>
 </section>

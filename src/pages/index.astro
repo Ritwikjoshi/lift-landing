@@ -2,21 +2,28 @@
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Hero from "../components/Hero.astro";
-import BentoPortals from "../components/BentoPortals.astro";
-import DDSimulator from "../components/DDSimulator.astro";
-import Workflow from "../components/Workflow.astro";
-import TrustSection from "../components/TrustSection.astro";
+import ProblemSection from "../components/ProblemSection.astro";
+import WorkflowJourney from "../components/WorkflowJourney.astro";
+import PlatformModules from "../components/PlatformModules.astro";
+import FlashDDSection from "../components/FlashDDSection.astro";
+import WorkstreamsReporting from "../components/WorkstreamsReporting.astro";
+import SolutionsComparison from "../components/SolutionsComparison.astro";
 import Footer from "../components/Footer.astro";
 ---
 
-<Layout>
+<Layout 
+  title="LIFT | Smart Due Diligence Platform"
+  description="LIFT is a smart due diligence platform connecting checklists, data rooms, experts, queries, findings and reporting in one structured workflow."
+>
   <Navbar />
   <main class="flex-1">
     <Hero />
-    <BentoPortals />
-    <DDSimulator />
-    <Workflow />
-    <TrustSection />
+    <ProblemSection />
+    <WorkflowJourney />
+    <PlatformModules />
+    <FlashDDSection />
+    <WorkstreamsReporting />
+    <SolutionsComparison />
   </main>
   <Footer />
 </Layout>

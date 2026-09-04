@@ -1,0 +1,467 @@
+---
+// src/components/PlatformModules.astro
+---
+
+<section class="py-24 relative bg-[#070a16]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-28">
+    
+    <!-- MODULE 1: SMART DD CHECKLIST (Section 15) -->
+    <div id="checklist" class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-6 space-y-5">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-mono uppercase tracking-wider">
+          Module 01 // Scope Engineering
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white font-heading tracking-tight">
+          Start with the right questions.
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Every diligence starts with scope. LIFT helps teams create structured, reusable and transaction-specific DD checklists so that the right information is requested from the beginning.
+        </p>
+        
+        <div class="grid grid-cols-2 gap-3 pt-2">
+          {['Custom checklists', 'Reusable templates', 'Workstream-based requests', 'Priority tagging', 'Owner assignment', 'Due dates & SLAs', 'Status tracking', 'Document linking'].map((feat) => (
+            <div class="flex items-center gap-2 text-xs text-slate-300">
+              <span class="text-indigo-400 font-bold">✓</span>
+              <span>{feat}</span>
+            </div>
+          ))}
+        </div>
+
+        <div class="pt-4">
+          <a href="/contact?intent=demo" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
+            <span>Explore Smart Checklists</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Checklist UI Mockup -->
+      <div class="lg:col-span-6 glass-panel-glow rounded-2xl p-5 sm:p-6 border border-indigo-500/20 shadow-xl">
+        <div class="flex items-center justify-between pb-3 border-b border-white/10 text-xs">
+          <span class="font-semibold text-white">Series A SaaS Checklist // Standard Scope</span>
+          <span class="text-[10px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">Active Scoping</span>
+        </div>
+
+        <div class="mt-4 space-y-2.5">
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5 flex items-center justify-between text-xs">
+            <div class="flex items-center gap-2.5">
+              <span class="w-4 h-4 rounded bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-[10px] font-bold">✓</span>
+              <span class="text-white">FY23–FY25 Audited Financial Statements</span>
+            </div>
+            <span class="text-[10px] font-mono text-slate-400">Finance // Assigned</span>
+          </div>
+
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5 flex items-center justify-between text-xs">
+            <div class="flex items-center gap-2.5">
+              <span class="w-4 h-4 rounded bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-[10px] font-bold">✓</span>
+              <span class="text-white">Fully Diluted Cap Table & ESOP Scheme</span>
+            </div>
+            <span class="text-[10px] font-mono text-slate-400">Corporate // Assigned</span>
+          </div>
+
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5 flex items-center justify-between text-xs">
+            <div class="flex items-center gap-2.5">
+              <span class="w-4 h-4 rounded bg-amber-500/20 text-amber-400 flex items-center justify-center text-[10px] font-bold">⋯</span>
+              <span class="text-white">Customer Master Agreements (Top 10)</span>
+            </div>
+            <span class="text-[10px] font-mono text-amber-400">Commercial // Due in 2d</span>
+          </div>
+
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5 flex items-center justify-between text-xs">
+            <div class="flex items-center gap-2.5">
+              <span class="w-4 h-4 rounded bg-slate-800 text-slate-500 flex items-center justify-center text-[10px] font-bold">○</span>
+              <span class="text-white">IP Assignment & Patent Deeds</span>
+            </div>
+            <span class="text-[10px] font-mono text-slate-500">Legal // Pending Upload</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 2: SMART DATA ROOM (Section 16) -->
+    <div id="dataroom" class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <!-- Data Room Mockup -->
+      <div class="lg:col-span-6 order-2 lg:order-1 glass-panel-glow rounded-2xl p-5 sm:p-6 border border-blue-500/20 shadow-xl">
+        <div class="flex items-center justify-between pb-3 border-b border-white/10 text-xs">
+          <div class="flex items-center gap-2">
+            <span class="font-semibold text-white">Deal Vault // TechFlow Robotics</span>
+          </div>
+          <span class="text-[10px] font-mono text-blue-400">Role: Investment Committee (Watermarked)</span>
+        </div>
+
+        <div class="mt-4 space-y-2 text-xs">
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5 flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+              <span class="text-blue-400">📁</span>
+              <div>
+                <div class="text-white font-medium">01_Financial_Diligence/</div>
+                <div class="text-[10px] text-slate-400">Mapped to: Parameter 1.1–1.8 • 18 Documents</div>
+              </div>
+            </div>
+            <span class="text-[10px] font-mono text-emerald-400">4 Verified</span>
+          </div>
+
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5 flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+              <span class="text-purple-400">📁</span>
+              <div>
+                <div class="text-white font-medium">02_Corporate_Secretarial/</div>
+                <div class="text-[10px] text-slate-400">Mapped to: Parameter 2.1–2.4 • 24 Documents</div>
+              </div>
+            </div>
+            <span class="text-[10px] font-mono text-emerald-400">All Reconciled</span>
+          </div>
+
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5 flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+              <span class="text-amber-400">📁</span>
+              <div>
+                <div class="text-white font-medium">03_Material_Contracts/</div>
+                <div class="text-[10px] text-slate-400">Mapped to: Parameter 3.1–3.6 • 42 Documents</div>
+              </div>
+            </div>
+            <span class="text-[10px] font-mono text-amber-400">2 Under Review</span>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] text-slate-400">
+          <span>Granular access by workstream</span>
+          <span class="text-slate-300 font-mono">Immutable audit logging</span>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 order-1 lg:order-2 space-y-5">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-mono uppercase tracking-wider">
+          Module 02 // Document Infrastructure
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white font-heading tracking-tight">
+          A data room built around the diligence.
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          A data room should do more than store files. LIFT connects documents directly with the DD requirements, experts, queries and findings they support.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-white/5">
+            <div class="text-white font-semibold text-xs mb-1">Structured Folders</div>
+            <p class="text-[11px] text-slate-400">Pre-organised strictly by DD workstream, eliminating folder sprawl.</p>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-white/5">
+            <div class="text-white font-semibold text-xs mb-1">Document Mapping</div>
+            <p class="text-[11px] text-slate-400">Connect files directly to specific diligence checklist requirements.</p>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-white/5">
+            <div class="text-white font-semibold text-xs mb-1">Granular Permissions</div>
+            <p class="text-[11px] text-slate-400">Control file visibility strictly by professional role and workstream.</p>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-white/5">
+            <div class="text-white font-semibold text-xs mb-1">Activity Tracking</div>
+            <p class="text-[11px] text-slate-400">Complete visibility over document access, downloads, and annotations.</p>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <a href="/contact?intent=demo" class="inline-flex items-center gap-2 text-xs font-semibold text-blue-400 hover:text-blue-300 transition-colors">
+            <span>Explore Data Room</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 3: EXPERT NETWORK & WORKSPACE (Sections 17 & 18) -->
+    <div id="experts" class="space-y-12">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-mono uppercase tracking-wider">
+          Module 03 // Professional Ecosystem
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white font-heading tracking-tight mt-3">
+          The right expertise for every question.
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mt-3">
+          No single professional sees the entire business. LIFT enables a coordinated diligence environment where specialists can work together across multiple dimensions of a transaction.
+        </p>
+      </div>
+
+      <!-- 8 Expert Categories Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        {[
+          { title: 'Chartered Accountant', scope: 'Financial controls, P&L, balance sheet, and tax review.' },
+          { title: 'Company Secretary', scope: 'Corporate governance, ROC, and secretarial compliance.' },
+          { title: 'Legal Expert', scope: 'Material contracts, litigation risk, and regulatory mandates.' },
+          { title: 'IP Lawyer', scope: 'Patents, trademarks, copyright, and technology licensing.' },
+          { title: 'CFA / Investment Lead', scope: 'Financial modeling, working capital, and unit economics.' },
+          { title: 'Registered Valuer', scope: 'Business valuation, securities, and asset benchmarking.' },
+          { title: 'Technology Expert', scope: 'Architecture, codebase health, IT, and cybersecurity.' },
+          { title: 'Domain Specialist', scope: 'Industry-specific operating benchmarks and risk parameters.' }
+        ].map((item) => (
+          <div class="p-4 rounded-xl glass-panel border border-white/5 hover:border-purple-500/30 transition-all">
+            <div class="text-xs font-bold text-white font-heading">{item.title}</div>
+            <p class="text-[11px] text-slate-400 mt-1.5 leading-relaxed">{item.scope}</p>
+          </div>
+        ))}
+      </div>
+
+      <!-- Expert Workspace Mockup -->
+      <div class="glass-panel-glow rounded-2xl p-6 border border-purple-500/20">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-white/10 gap-2">
+          <div>
+            <span class="text-xs font-semibold text-purple-300 uppercase tracking-wider font-mono">Dedicated Expert Workspace Terminal</span>
+            <div class="text-sm font-bold text-white mt-0.5">Assigned Specialist: Financial & Tax Lead</div>
+          </div>
+          <div class="flex items-center gap-3 text-xs">
+            <span class="text-slate-400">Target: TechFlow Robotics</span>
+            <span class="px-2.5 py-0.5 rounded-full bg-purple-500/20 text-purple-300 font-mono text-[10px]">Active Engagement</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 mt-4 text-center">
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+            <span class="text-[10px] text-slate-400 block uppercase">Workstreams</span>
+            <span class="text-sm font-bold text-white font-mono">Financial + Tax</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+            <span class="text-[10px] text-slate-400 block uppercase">Documents</span>
+            <span class="text-sm font-bold text-indigo-400 font-mono">38 Allocated</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+            <span class="text-[10px] text-slate-400 block uppercase">Open Queries</span>
+            <span class="text-sm font-bold text-amber-400 font-mono">06 Pending</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+            <span class="text-[10px] text-slate-400 block uppercase">Pending Actions</span>
+            <span class="text-sm font-bold text-white font-mono">02 Reviews</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+            <span class="text-[10px] text-slate-400 block uppercase">Findings</span>
+            <span class="text-sm font-bold text-rose-400 font-mono">03 Flagged</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+            <span class="text-[10px] text-slate-400 block uppercase">Deadline</span>
+            <span class="text-sm font-bold text-white font-mono">In 3 Days</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900/80 border border-emerald-500/20 bg-emerald-500/5">
+            <span class="text-[10px] text-emerald-400 block uppercase">Status</span>
+            <span class="text-sm font-bold text-emerald-300 font-mono">On Schedule</span>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-3 border-t border-white/10 text-center text-xs text-slate-400">
+          <span class="text-white font-medium">One transaction. Multiple experts. One coordinated workspace.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 4: AI DOCUMENT INTELLIGENCE (Section 19) -->
+    <div id="ai-intel" class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-6 space-y-5">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-mono uppercase tracking-wider">
+          Module 04 // Cognitive Assistance
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white font-heading tracking-tight">
+          Let the documents speak faster.
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          LIFT can use technology-assisted document intelligence to help teams process large volumes of information more efficiently.
+        </p>
+
+        <!-- Positioning Callout -->
+        <div class="p-4 rounded-xl bg-cyan-500/10 border border-cyan-500/30">
+          <div class="text-xs font-bold text-cyan-300 uppercase tracking-wider font-mono">Foundational Principle:</div>
+          <div class="text-sm font-bold text-white mt-1">AI-assisted. Expert-verified.</div>
+          <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+            AI augments discovery, flags variances, and summarizes large schedules—but professional judgment remains firmly in the hands of qualified advisory specialists.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 text-xs">
+          <div class="p-2.5 rounded-lg bg-white/5 border border-white/5">
+            <span class="font-semibold text-white block">CLASSIFY</span>
+            <span class="text-[11px] text-slate-400">Identify and categorize document types</span>
+          </div>
+          <div class="p-2.5 rounded-lg bg-white/5 border border-white/5">
+            <span class="font-semibold text-white block">EXTRACT</span>
+            <span class="text-[11px] text-slate-400">Surface key clauses, numbers and covenants</span>
+          </div>
+          <div class="p-2.5 rounded-lg bg-white/5 border border-white/5">
+            <span class="font-semibold text-white block">SUMMARISE</span>
+            <span class="text-[11px] text-slate-400">Produce concise multi-page summaries</span>
+          </div>
+          <div class="p-2.5 rounded-lg bg-white/5 border border-white/5">
+            <span class="font-semibold text-white block">COMPARE</span>
+            <span class="text-[11px] text-slate-400">Detect differences between versions</span>
+          </div>
+          <div class="p-2.5 rounded-lg bg-white/5 border border-white/5">
+            <span class="font-semibold text-white block">FLAG</span>
+            <span class="text-[11px] text-slate-400">Surface inconsistencies and review triggers</span>
+          </div>
+          <div class="p-2.5 rounded-lg bg-white/5 border border-white/5">
+            <span class="font-semibold text-white block">ASK</span>
+            <span class="text-[11px] text-slate-400">Natural queries against authorized files</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Intel Mockup -->
+      <div class="lg:col-span-6 glass-panel-glow rounded-2xl p-6 border border-cyan-500/25 space-y-4">
+        <div class="flex items-center justify-between pb-3 border-b border-white/10 text-xs">
+          <span class="font-semibold text-white font-mono">Ask LIFT // Intelligence Query</span>
+          <span class="text-[10px] text-cyan-400 font-mono">Scope: Authorized Contracts</span>
+        </div>
+
+        <div class="p-3.5 rounded-xl bg-slate-900 border border-white/10 text-xs text-slate-300">
+          <span class="text-cyan-400 font-semibold">User Prompt:</span> "Does any vendor contract include change-of-control termination triggers or uncapped liability?"
+        </div>
+
+        <div class="p-4 rounded-xl bg-cyan-950/40 border border-cyan-500/20 space-y-2.5 text-xs">
+          <div class="flex items-center justify-between text-[11px]">
+            <span class="text-cyan-300 font-semibold">LIFT Synthesis (Verified against 42 Documents)</span>
+            <span class="text-slate-400 font-mono">Confidence: High</span>
+          </div>
+          <p class="text-slate-300 text-xs leading-relaxed">
+            Identified 1 change-of-control provision in <span class="text-white font-medium">Enterprise Supply Agreement §14.2 (LogiCore Solutions)</span> requiring 30 days prior written notice before equity acquisition closing.
+          </p>
+          <div class="pt-2 border-t border-cyan-500/20 flex items-center justify-between text-[11px]">
+            <span class="text-slate-400 font-mono">Source: DOC-LEGAL-084.pdf (p. 23)</span>
+            <span class="text-indigo-400 font-medium">Auto-Mapped to Query Hub &rarr;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 5: QUERY HUB (Section 20) -->
+    <div id="queryhub" class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <!-- Query Hub Lifecycle Mockup -->
+      <div class="lg:col-span-6 order-2 lg:order-1 glass-panel-glow rounded-2xl p-6 border border-emerald-500/20 space-y-4">
+        <div class="flex items-center justify-between pb-3 border-b border-white/10 text-xs">
+          <span class="font-semibold text-white">Central Query Hub // Live Stream</span>
+          <span class="text-[10px] text-emerald-400 font-mono">5-Stage State Machine</span>
+        </div>
+
+        <!-- Query Lifecycle Strip -->
+        <div class="flex items-center justify-between text-[10px] font-mono text-center px-1">
+          <span class="text-slate-400 font-semibold">RAISED &rarr;</span>
+          <span class="text-slate-400 font-semibold">ASSIGNED &rarr;</span>
+          <span class="text-slate-400 font-semibold">RESPONDED &rarr;</span>
+          <span class="text-slate-400 font-semibold">REVIEWED &rarr;</span>
+          <span class="text-emerald-400 font-semibold">RESOLVED</span>
+        </div>
+
+        <div class="space-y-2.5">
+          <div class="p-3.5 rounded-xl bg-slate-900/80 border border-white/5 space-y-2">
+            <div class="flex items-center justify-between text-xs">
+              <span class="font-semibold text-white">Query #Q-FIN-019: FY24 R&D Capitalization</span>
+              <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-300 font-mono text-[10px]">Resolved</span>
+            </div>
+            <p class="text-[11px] text-slate-300">
+              "Please clarify software development cost capitalization policy under Ind AS 38."
+            </p>
+            <div class="flex items-center justify-between text-[10px] text-slate-400 pt-1 border-t border-white/5 font-mono">
+              <span>Expert: Chartered Accountant</span>
+              <span>Evidence Attached: Schedule 14A</span>
+            </div>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-slate-900/80 border border-white/5 space-y-2">
+            <div class="flex items-center justify-between text-xs">
+              <span class="font-semibold text-white">Query #Q-CORP-007: MCA Form PAS-3 Confirmation</span>
+              <span class="px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 font-mono text-[10px]">Responded / Reviewing</span>
+            </div>
+            <p class="text-[11px] text-slate-300">
+              "Stamp duty receipt confirmation for preferential allotment dated 12/04/2024."
+            </p>
+            <div class="flex items-center justify-between text-[10px] text-slate-400 pt-1 border-t border-white/5 font-mono">
+              <span>Expert: Company Secretary</span>
+              <span>Founder Response: 4 hrs ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 order-1 lg:order-2 space-y-5">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono uppercase tracking-wider">
+          Module 05 // Q&A Architecture
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white font-heading tracking-tight">
+          Every question. One place.
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Due diligence is as much about asking the right questions as reviewing the right documents. LIFT brings questions, responses, documents and experts into one structured conversation.
+        </p>
+
+        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+          Each query is bound to a specific DD parameter, supporting file, specialist owner, SLA, and complete audit history.
+        </p>
+
+        <div class="p-3.5 rounded-xl bg-slate-900 border border-white/10 font-medium text-xs text-emerald-300">
+          No important question should disappear into an email thread.
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 6: RISK & FINDINGS (Section 21) -->
+    <div id="findings" class="space-y-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-rose-500/10 border border-rose-500/20 text-rose-400 text-xs font-mono uppercase tracking-wider">
+          Module 06 // Decision Intelligence
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white font-heading tracking-tight mt-3">
+          See what matters.
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mt-3">
+          Findings become valuable when they are structured, prioritised and connected to evidence. LIFT categorizes observations with institutional severity parameters.
+        </p>
+      </div>
+
+      <!-- Severity Taxonomy & Finding Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <div class="p-5 rounded-2xl glass-panel border border-rose-500/30 bg-rose-500/5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold font-mono text-rose-400 uppercase">CRITICAL RISK</span>
+            <span class="w-2 h-2 rounded-full bg-rose-500"></span>
+          </div>
+          <div class="text-xs font-semibold text-slate-300">Material to transaction</div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Directly impacts valuation, governance legality, or deal viability (e.g. undisclosed litigation, severe customer concentration).
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl glass-panel border border-amber-500/30 bg-amber-500/5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold font-mono text-amber-400 uppercase">HIGH RISK</span>
+            <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+          </div>
+          <div class="text-xs font-semibold text-slate-300">Requires immediate attention</div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Remediation condition precedent (CP) or condition subsequent (CS) required before closing.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl glass-panel border border-blue-500/30 bg-blue-500/5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold font-mono text-blue-400 uppercase">MEDIUM RISK</span>
+            <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+          </div>
+          <div class="text-xs font-semibold text-slate-300">Clarification / Monitoring</div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Operational or statutory variance that can be resolved with standard compliance regularization.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl glass-panel border border-slate-700 bg-slate-900/60 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold font-mono text-slate-300 uppercase">LOW RISK</span>
+            <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+          </div>
+          <div class="text-xs font-semibold text-slate-300">Minor observation</div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Administrative notation or documentation best practice recommendation for post-deal housekeeping.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

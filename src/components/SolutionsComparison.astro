@@ -1,0 +1,256 @@
+---
+// src/components/SolutionsComparison.astro
+---
+
+<section id="who-uses-lift" class="py-24 relative bg-[#060813]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-28">
+    
+    <!-- Section 27 to 31: Who Uses LIFT? -->
+    <div>
+      <div class="max-w-3xl mb-14">
+        <span class="text-xs font-semibold uppercase tracking-widest text-indigo-400 font-mono">Ecosystem Fit</span>
+        <h2 class="text-3xl sm:text-5xl font-bold text-white font-heading tracking-tight mt-3">
+          Built for everyone around the transaction.
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed">
+          Whether you are deploying capital, evaluating an acquisition, preparing for investment, or orchestrating specialist advisory reviews, LIFT provides a dedicated experience.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- INVESTORS (Section 28) -->
+        <div class="glass-panel rounded-2xl p-7 border border-white/5 hover:border-indigo-500/30 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-indigo-400 uppercase">INVESTORS</span>
+              <span class="text-[10px] text-slate-500 font-mono">PE • VC • Family Offices</span>
+            </div>
+            <h3 class="text-lg font-bold text-white font-heading mb-2">Know what you're investing in.</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Bring diligence requests, documents, experts, findings and reporting into one connected investment workflow. Surface red flags before the IC meeting.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
+            <span class="text-[11px] text-slate-400 font-mono">Single source of truth</span>
+            <a href="/contact?persona=investor" class="text-xs font-semibold text-indigo-400 hover:text-indigo-300">Start Investor DD &rarr;</a>
+          </div>
+        </div>
+
+        <!-- CORPORATES -->
+        <div class="glass-panel rounded-2xl p-7 border border-white/5 hover:border-blue-500/30 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-blue-400 uppercase">CORPORATES</span>
+              <span class="text-[10px] text-slate-500 font-mono">M&A • Corporate Dev • Strategy</span>
+            </div>
+            <h3 class="text-lg font-bold text-white font-heading mb-2">Coordinate complex M&A diligence.</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Coordinate internal deal teams, legal counsels, and external accounting specialists across domestic or cross-border acquisitions without confusion.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
+            <span class="text-[11px] text-slate-400 font-mono">Multi-stream oversight</span>
+            <a href="/contact?persona=corporate" class="text-xs font-semibold text-blue-400 hover:text-blue-300">Explore Corporate M&A &rarr;</a>
+          </div>
+        </div>
+
+        <!-- FOUNDERS (Section 29) -->
+        <div class="glass-panel rounded-2xl p-7 border border-white/5 hover:border-emerald-500/30 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-emerald-400 uppercase">FOUNDERS</span>
+              <span class="text-[10px] text-slate-500 font-mono">Startups • Growth Ventures</span>
+            </div>
+            <h3 class="text-lg font-bold text-white font-heading mb-2">Be ready before diligence begins.</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Organise your documents, respond to requests, eliminate endless email chains, and keep investor due diligence moving swiftly toward closure.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
+            <span class="text-[11px] text-slate-400 font-mono">Frictionless data room</span>
+            <a href="/contact?persona=founder" class="text-xs font-semibold text-emerald-400 hover:text-emerald-300">Prepare for DD &rarr;</a>
+          </div>
+        </div>
+
+        <!-- ADVISORS (Section 30) -->
+        <div class="glass-panel rounded-2xl p-7 border border-white/5 hover:border-purple-500/30 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-purple-400 uppercase">ADVISORS</span>
+              <span class="text-[10px] text-slate-500 font-mono">CA • CS • Legal • Valuers</span>
+            </div>
+            <h3 class="text-lg font-bold text-white font-heading mb-2">Work smarter across assignments.</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Give your professional team a structured environment for reviewing documents, managing queries, recording findings, and collaborating across workstreams.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
+            <span class="text-[11px] text-slate-400 font-mono">Standardised review tools</span>
+            <a href="/contact?persona=advisor" class="text-xs font-semibold text-purple-400 hover:text-purple-300">Explore Advisor Workspace &rarr;</a>
+          </div>
+        </div>
+
+        <!-- INCUBATORS & ACCELERATORS (Section 31) -->
+        <div class="glass-panel rounded-2xl p-7 border border-white/5 hover:border-amber-500/30 transition-all flex flex-col justify-between md:col-span-2 lg:col-span-2">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-amber-400 uppercase">INCUBATORS & ACCELERATORS</span>
+              <span class="text-[10px] text-slate-500 font-mono">Startup Hubs • Ecosystems</span>
+            </div>
+            <h3 class="text-lg font-bold text-white font-heading mb-2">Make every portfolio company diligence-ready.</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Standardise diligence readiness across your startup cohort and create a structured, repeatable path from early seed documentation to Series A investor readiness.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between">
+            <span class="text-[11px] text-slate-400 font-mono">Cohort tracking & readiness</span>
+            <a href="/contact?persona=incubator" class="text-xs font-semibold text-amber-400 hover:text-amber-300">Explore Cohort DD &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Section 32: LIFT vs Traditional DD Comparison -->
+    <div class="border-t border-white/10 pt-16">
+      <div class="max-w-3xl mb-12">
+        <span class="text-xs font-semibold uppercase tracking-widest text-indigo-400 font-mono">Competitive Difference</span>
+        <h2 class="text-3xl sm:text-5xl font-bold text-white font-heading tracking-tight mt-3">
+          Replace DD chaos with a connected workflow.
+        </h2>
+        <p class="mt-4 text-sm sm:text-base text-slate-300 leading-relaxed">
+          More than a data room. More than a checklist. More than a report. LIFT connects the entire diligence workflow.
+        </p>
+      </div>
+
+      <!-- Comparison Matrix Table -->
+      <div class="glass-panel-glow rounded-3xl p-6 sm:p-8 border border-white/10 overflow-x-auto shadow-2xl">
+        <table class="w-full text-left text-xs sm:text-sm">
+          <thead>
+            <tr class="border-b border-white/10 text-slate-400 font-mono uppercase text-[11px]">
+              <th class="pb-4 font-semibold">Diligence Dimension</th>
+              <th class="pb-4 font-semibold text-slate-400">Traditional Due Diligence</th>
+              <th class="pb-4 font-semibold text-indigo-300">LIFT Operating Platform</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-white/5 text-slate-300">
+            <tr>
+              <td class="py-3.5 font-medium text-white">Scoping & Requests</td>
+              <td class="py-3.5 text-slate-400">Static Excel checklists emailed around</td>
+              <td class="py-3.5 text-indigo-300 font-medium">Smart DD structured workflows</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 font-medium text-white">Document Repository</td>
+              <td class="py-3.5 text-slate-400">Scattered folders & arbitrary Google Drive links</td>
+              <td class="py-3.5 text-indigo-300 font-medium">Structured data room mapped to requirements</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 font-medium text-white">Q&A Management</td>
+              <td class="py-3.5 text-slate-400">Fragmented email chains & WhatsApp chats</td>
+              <td class="py-3.5 text-indigo-300 font-medium">Central Query Hub with lifecycle states</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 font-medium text-white">Specialist Review</td>
+              <td class="py-3.5 text-slate-400">Separate experts working in disconnected silos</td>
+              <td class="py-3.5 text-indigo-300 font-medium">Connected expert workspace & cross-collaboration</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 font-medium text-white">Document Analysis</td>
+              <td class="py-3.5 text-slate-400">Manual, slow reading of hundreds of pages</td>
+              <td class="py-3.5 text-indigo-300 font-medium">Technology-assisted analysis (AI + Expert)</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 font-medium text-white">Risk Discovery</td>
+              <td class="py-3.5 text-slate-400">Findings buried until final consolidation</td>
+              <td class="py-3.5 text-indigo-300 font-medium">Live risk & findings registry by severity</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 font-medium text-white">Progress Visibility</td>
+              <td class="py-3.5 text-slate-400">Wait weeks for final report delivery</td>
+              <td class="py-3.5 text-indigo-300 font-medium">Flash DD™ evolving real-time radar</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 font-medium text-white">Deliverable Synthesis</td>
+              <td class="py-3.5 text-slate-400">Days of manual report copy-pasting</td>
+              <td class="py-3.5 text-indigo-300 font-medium">Traceable, decision-ready reports</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 font-medium text-white">Source of Truth</td>
+              <td class="py-3.5 text-slate-400">Multiple conflicting versions of spreadsheets</td>
+              <td class="py-3.5 text-emerald-400 font-semibold">One connected, auditable workspace</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Section 33: LIFT + GGAM Synergy -->
+    <div class="border-t border-white/10 pt-16">
+      <div class="glass-panel-glow rounded-3xl p-8 sm:p-12 border border-purple-500/20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7 space-y-4">
+            <span class="text-xs font-semibold uppercase tracking-widest text-purple-400 font-mono">Institutional Backing</span>
+            <h2 class="text-2xl sm:text-4xl font-bold text-white font-heading">
+              Technology meets professional expertise.
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              LIFT provides the technology and workflow layer. GGAM brings professional expertise and transaction understanding. Together, they create a more structured approach to due diligence.
+            </p>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Access to and coordination with relevant professional expertise—including Chartered Accountants, Company Secretaries, legal counsels, and valuers—is facilitated seamlessly, subject to engagement terms and availability.
+            </p>
+          </div>
+
+          <div class="lg:col-span-5 bg-slate-900/80 rounded-2xl p-6 border border-white/10 space-y-3 font-mono text-xs">
+            <div class="flex items-center justify-between p-2.5 rounded-lg bg-white/5">
+              <span class="text-indigo-400 font-bold">LIFT Platform</span>
+              <span class="text-slate-400">Workflow • Data Room • AI • Radar</span>
+            </div>
+            <div class="text-center text-slate-500 font-bold text-base">&times;</div>
+            <div class="flex items-center justify-between p-2.5 rounded-lg bg-white/5">
+              <span class="text-purple-400 font-bold">GGAM Advisory</span>
+              <span class="text-slate-400">CA • CS • Legal • Valuation</span>
+            </div>
+            <div class="text-center text-slate-500 font-bold text-base">=</div>
+            <div class="p-3 rounded-xl bg-gradient-to-r from-indigo-900/40 via-purple-900/40 to-blue-900/40 border border-indigo-500/30 text-center">
+              <span class="text-sm font-bold text-white font-heading block">Intelligent Due Diligence</span>
+              <span class="text-[10px] text-indigo-300">Decision-ready clarity</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 62 & 63: Final Homepage CTA -->
+    <div class="border-t border-white/10 pt-16 text-center max-w-4xl mx-auto space-y-6">
+      <div class="text-xs font-mono uppercase tracking-widest text-indigo-400">
+        From Information to Insight. From Insight to Decision.
+      </div>
+
+      <h2 class="text-3xl sm:text-5xl font-bold text-white font-heading tracking-tight leading-tight">
+        Ready to lift your DD process?
+      </h2>
+
+      <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        Start your next diligence assignment with a smarter, more connected workflow. Less chasing, less fragmentation, and more clarity.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+        <a href="/contact?intent=start-dd" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-sm bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 text-white shadow-[0_0_30px_rgba(99,102,241,0.5)] hover:shadow-[0_0_45px_rgba(99,102,241,0.8)] hover:scale-[1.02] transition-all">
+          Start a DD
+        </a>
+        <a href="/contact?intent=demo" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-sm glass-panel border border-white/10 hover:border-white/20 text-slate-200 hover:text-white transition-all">
+          Book a Demo
+        </a>
+      </div>
+
+      <div class="pt-2 text-xs text-slate-400">
+        <span class="text-white font-medium">LIFT by GGAM</span> • Confidential • Traceable • Decision-Ready
+      </div>
+    </div>
+
+  </div>
+</section>
