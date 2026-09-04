@@ -1,0 +1,52 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "LIFT — Institutional Due Diligence Operating System",
+  description = "The unified operating system orchestrating institutional due diligence between GGAM Capital, premier startup incubators, and high-growth ventures."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      }
+      h1, h2, h3, .font-heading {
+        font-family: 'Space Grotesk', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#060913] text-slate-100 min-h-screen relative selection:bg-indigo-500/30 selection:text-indigo-200">
+    <!-- Ambient Grid & Radial Glows -->
+    <div class="fixed inset-0 pointer-events-none z-0">
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[450px] bg-gradient-to-b from-indigo-500/15 via-purple-500/5 to-transparent blur-3xl opacity-80"></div>
+      <div class="absolute top-[35%] right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[140px] rounded-full"></div>
+      <div class="absolute top-[70%] left-0 w-[600px] h-[600px] bg-indigo-600/10 blur-[150px] rounded-full"></div>
+    </div>
+
+    <div class="relative z-10 flex flex-col min-h-screen">
+      <slot />
+    </div>
+  </body>
+</html>
