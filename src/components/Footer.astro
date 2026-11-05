@@ -1,5 +1,6 @@
 ---
 // src/components/Footer.astro
+import Logo from "./Logo.astro";
 ---
 
 <footer class="border-t border-slate-200 bg-slate-100/80 pt-16 pb-12 relative overflow-hidden">
@@ -8,14 +9,8 @@
       
       <!-- Brand column (Span 2) -->
       <div class="lg:col-span-2 space-y-4">
-        <a href="/" class="flex items-center gap-3">
-          <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#8b5cf6] to-[#d946ef] flex items-center justify-center font-extrabold text-white text-base shadow-[0_4px_12px_rgba(139,92,246,0.3)]">
-            L
-          </div>
-          <div class="flex flex-col">
-            <span class="text-xl font-bold tracking-tight text-slate-900 font-heading">LIFT</span>
-            <span class="text-[9px] uppercase tracking-widest text-slate-500 font-semibold">By GGAM Advisory</span>
-          </div>
+        <a href="/" class="group inline-flex items-center">
+          <Logo size={36} />
         </a>
 
         <p class="text-xs text-slate-800 font-semibold leading-relaxed max-w-sm">
