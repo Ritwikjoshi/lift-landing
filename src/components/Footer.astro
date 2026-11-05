@@ -2,42 +2,42 @@
 // src/components/Footer.astro
 ---
 
-<footer class="border-t border-white/[0.08] bg-[#05070e] pt-16 pb-12 relative overflow-hidden">
+<footer class="border-t border-slate-200 bg-slate-100/80 pt-16 pb-12 relative overflow-hidden">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 mb-14">
       
       <!-- Brand column (Span 2) -->
       <div class="lg:col-span-2 space-y-4">
         <a href="/" class="flex items-center gap-3">
-          <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#8b5cf6] to-[#d946ef] flex items-center justify-center font-extrabold text-white text-base shadow-[0_0_20px_rgba(139,92,246,0.5)]">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#8b5cf6] to-[#d946ef] flex items-center justify-center font-extrabold text-white text-base shadow-[0_4px_12px_rgba(139,92,246,0.3)]">
             L
           </div>
           <div class="flex flex-col">
-            <span class="text-xl font-bold tracking-tight text-white font-heading">LIFT</span>
-            <span class="text-[9px] uppercase tracking-widest text-slate-400 font-medium">By GGAM Advisory</span>
+            <span class="text-xl font-bold tracking-tight text-slate-900 font-heading">LIFT</span>
+            <span class="text-[9px] uppercase tracking-widest text-slate-500 font-semibold">By GGAM Advisory</span>
           </div>
         </a>
 
-        <p class="text-xs text-slate-300 font-medium leading-relaxed max-w-sm">
+        <p class="text-xs text-slate-800 font-semibold leading-relaxed max-w-sm">
           Smart Due Diligence. Accelerated.
         </p>
 
-        <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+        <p class="text-xs text-slate-600 leading-relaxed max-w-sm">
           One connected workflow bringing together DD checklists, secure data rooms, domain experts, document review, queries, findings, flash reporting, and final DD reporting.
         </p>
 
         <!-- Dedicated Tenant Subdomain Links -->
         <div class="pt-2 flex flex-wrap gap-2">
-          <a href="https://admin.lift.business" target="_blank" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-violet-500/10 border border-violet-500/20 text-[10px] text-violet-300 font-mono hover:bg-violet-500/20 transition-colors">
-            <span class="w-1.5 h-1.5 rounded-full bg-violet-400"></span>
+          <a href="https://admin.lift.business" target="_blank" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white border border-slate-200 shadow-xs text-[10px] text-violet-700 font-mono hover:border-violet-300 transition-colors">
+            <span class="w-1.5 h-1.5 rounded-full bg-violet-600"></span>
             <span>admin.lift.business</span>
           </a>
-          <a href="https://incubator.lift.business" target="_blank" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-blue-500/10 border border-blue-500/20 text-[10px] text-blue-300 font-mono hover:bg-blue-500/20 transition-colors">
-            <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
+          <a href="https://incubator.lift.business" target="_blank" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white border border-slate-200 shadow-xs text-[10px] text-blue-700 font-mono hover:border-blue-300 transition-colors">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
             <span>incubator.lift.business</span>
           </a>
-          <a href="https://startup.lift.business" target="_blank" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-violet-500/10 border border-violet-500/20 text-[10px] text-violet-300 font-mono hover:bg-violet-500/20 transition-colors">
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+          <a href="https://startup.lift.business" target="_blank" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white border border-slate-200 shadow-xs text-[10px] text-violet-700 font-mono hover:border-violet-300 transition-colors">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
             <span>startup.lift.business</span>
           </a>
         </div>
@@ -45,82 +45,82 @@
 
       <!-- Platform (Span 1) -->
       <div>
-        <h4 class="text-xs font-semibold text-white uppercase tracking-wider mb-4 font-heading">Platform</h4>
-        <ul class="space-y-2.5 text-xs text-slate-400">
-          <li><a href="/#checklist" class="hover:text-violet-400 transition-colors">Smart DD Checklist</a></li>
-          <li><a href="/#dataroom" class="hover:text-violet-400 transition-colors">Smart Data Room</a></li>
-          <li><a href="/#experts" class="hover:text-violet-400 transition-colors">Expert Workspace</a></li>
-          <li><a href="/#queryhub" class="hover:text-violet-400 transition-colors">Central Query Hub</a></li>
-          <li><a href="/#ai-intel" class="hover:text-violet-400 transition-colors">AI Document Intel</a></li>
-          <li><a href="/#findings" class="hover:text-violet-400 transition-colors">Risk & Findings</a></li>
-          <li><a href="/#flash-dd" class="hover:text-violet-400 transition-colors">Flash DD™</a></li>
-          <li><a href="/#control-tower" class="hover:text-violet-400 transition-colors">DD Control Tower</a></li>
-          <li><a href="/#reporting" class="hover:text-violet-400 transition-colors">Final DD Reporting</a></li>
+        <h4 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-4 font-heading">Platform</h4>
+        <ul class="space-y-2.5 text-xs text-slate-600">
+          <li><a href="/#checklist" class="hover:text-violet-700 transition-colors">Smart DD Checklist</a></li>
+          <li><a href="/#dataroom" class="hover:text-violet-700 transition-colors">Smart Data Room</a></li>
+          <li><a href="/#experts" class="hover:text-violet-700 transition-colors">Expert Workspace</a></li>
+          <li><a href="/#queryhub" class="hover:text-violet-700 transition-colors">Central Query Hub</a></li>
+          <li><a href="/#ai-intel" class="hover:text-violet-700 transition-colors">AI Document Intel</a></li>
+          <li><a href="/#findings" class="hover:text-violet-700 transition-colors">Risk & Findings</a></li>
+          <li><a href="/#flash-dd" class="hover:text-violet-700 transition-colors">Flash DD™</a></li>
+          <li><a href="/#control-tower" class="hover:text-violet-700 transition-colors">DD Control Tower</a></li>
+          <li><a href="/#reporting" class="hover:text-violet-700 transition-colors">Final DD Reporting</a></li>
         </ul>
       </div>
 
       <!-- Solutions (Span 1) -->
       <div>
-        <h4 class="text-xs font-semibold text-white uppercase tracking-wider mb-4 font-heading">Solutions</h4>
-        <ul class="space-y-2.5 text-xs text-slate-400">
-          <li><a href="/#who-uses-lift" class="hover:text-violet-400 transition-colors">For Investors</a></li>
-          <li><a href="/#who-uses-lift" class="hover:text-violet-400 transition-colors">For Corporates & M&A</a></li>
-          <li><a href="/#who-uses-lift" class="hover:text-violet-400 transition-colors">For Founders</a></li>
-          <li><a href="/#who-uses-lift" class="hover:text-violet-400 transition-colors">For Advisors</a></li>
-          <li><a href="/#who-uses-lift" class="hover:text-violet-400 transition-colors">For Incubators & Hubs</a></li>
+        <h4 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-4 font-heading">Solutions</h4>
+        <ul class="space-y-2.5 text-xs text-slate-600">
+          <li><a href="/#who-uses-lift" class="hover:text-violet-700 transition-colors">For Investors</a></li>
+          <li><a href="/#who-uses-lift" class="hover:text-violet-700 transition-colors">For Corporates & M&A</a></li>
+          <li><a href="/#who-uses-lift" class="hover:text-violet-700 transition-colors">For Founders</a></li>
+          <li><a href="/#who-uses-lift" class="hover:text-violet-700 transition-colors">For Advisors</a></li>
+          <li><a href="/#who-uses-lift" class="hover:text-violet-700 transition-colors">For Incubators & Hubs</a></li>
         </ul>
       </div>
 
       <!-- Workstreams (Span 1) -->
       <div>
-        <h4 class="text-xs font-semibold text-white uppercase tracking-wider mb-4 font-heading">DD Workstreams</h4>
-        <ul class="space-y-2.5 text-xs text-slate-400">
-          <li><a href="/workstreams#financial" class="hover:text-violet-400 transition-colors">Financial DD</a></li>
-          <li><a href="/workstreams#tax" class="hover:text-violet-400 transition-colors">Tax DD</a></li>
-          <li><a href="/workstreams#corporate" class="hover:text-violet-400 transition-colors">Corporate & MCA</a></li>
-          <li><a href="/workstreams#legal" class="hover:text-violet-400 transition-colors">Legal Due Diligence</a></li>
-          <li><a href="/workstreams#ip" class="hover:text-violet-400 transition-colors">Intellectual Property</a></li>
-          <li><a href="/workstreams#commercial" class="hover:text-violet-400 transition-colors">Commercial DD</a></li>
-          <li><a href="/workstreams#technology" class="hover:text-violet-400 transition-colors">Technology & Cyber</a></li>
-          <li><a href="/workstreams#valuation" class="hover:text-violet-400 transition-colors">Valuation</a></li>
+        <h4 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-4 font-heading">DD Workstreams</h4>
+        <ul class="space-y-2.5 text-xs text-slate-600">
+          <li><a href="/workstreams#financial" class="hover:text-violet-700 transition-colors">Financial DD</a></li>
+          <li><a href="/workstreams#tax" class="hover:text-violet-700 transition-colors">Tax DD</a></li>
+          <li><a href="/workstreams#corporate" class="hover:text-violet-700 transition-colors">Corporate & MCA</a></li>
+          <li><a href="/workstreams#legal" class="hover:text-violet-700 transition-colors">Legal Due Diligence</a></li>
+          <li><a href="/workstreams#ip" class="hover:text-violet-700 transition-colors">Intellectual Property</a></li>
+          <li><a href="/workstreams#commercial" class="hover:text-violet-700 transition-colors">Commercial DD</a></li>
+          <li><a href="/workstreams#technology" class="hover:text-violet-700 transition-colors">Technology & Cyber</a></li>
+          <li><a href="/workstreams#valuation" class="hover:text-violet-700 transition-colors">Valuation</a></li>
         </ul>
       </div>
 
       <!-- Company & Governance (Span 1) -->
       <div>
-        <h4 class="text-xs font-semibold text-white uppercase tracking-wider mb-4 font-heading">Company</h4>
-        <ul class="space-y-2.5 text-xs text-slate-400">
-          <li><a href="/about" class="hover:text-violet-400 transition-colors">About LIFT</a></li>
-          <li><a href="/how-it-works" class="hover:text-violet-400 transition-colors">How It Works</a></li>
-          <li><a href="/security" class="hover:text-violet-400 transition-colors">Security Architecture</a></li>
-          <li><a href="/contact?intent=demo" class="hover:text-violet-400 transition-colors">Book a Demo</a></li>
-          <li><a href="/contact?intent=start-dd" class="hover:text-violet-400 transition-colors">Start a DD</a></li>
-          <li><a href="/privacy" class="hover:text-violet-400 transition-colors">Privacy Policy</a></li>
-          <li><a href="/terms" class="hover:text-violet-400 transition-colors">Terms of Service</a></li>
+        <h4 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-4 font-heading">Company</h4>
+        <ul class="space-y-2.5 text-xs text-slate-600">
+          <li><a href="/about" class="hover:text-violet-700 transition-colors">About LIFT</a></li>
+          <li><a href="/how-it-works" class="hover:text-violet-700 transition-colors">How It Works</a></li>
+          <li><a href="/security" class="hover:text-violet-700 transition-colors">Security Architecture</a></li>
+          <li><a href="/contact?intent=demo" class="hover:text-violet-700 transition-colors">Book a Demo</a></li>
+          <li><a href="/contact?intent=start-dd" class="hover:text-violet-700 transition-colors">Start a DD</a></li>
+          <li><a href="/privacy" class="hover:text-violet-700 transition-colors">Privacy Policy</a></li>
+          <li><a href="/terms" class="hover:text-violet-700 transition-colors">Terms of Service</a></li>
         </ul>
       </div>
 
     </div>
 
     <!-- Mandatory Regulatory / Service Scope Disclaimer (Section 41) -->
-    <div class="py-6 border-t border-b border-white/[0.08] text-[11px] text-slate-400 leading-relaxed">
-      <span class="text-slate-300 font-semibold">Institutional Notice:</span>
+    <div class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-xs text-[11px] text-slate-600 leading-relaxed my-6">
+      <span class="text-slate-900 font-bold">Institutional Notice:</span>
       LIFT is a technology platform. Professional services, specialized statutory reviews, and expert engagements may be subject to separate scope, engagement terms, and availability. Access to and coordination with relevant professional expertise is subject to client engagement and professional qualification.
     </div>
 
     <!-- Bottom Bar -->
-    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+    <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
       <div>
         © {new Date().getFullYear()} LIFT (lift.business) by GGAM Advisory. All rights reserved.
       </div>
-      <div class="flex flex-wrap items-center gap-4 sm:gap-6 text-slate-400">
-        <a href="/privacy" class="hover:text-white transition-colors">Privacy</a>
+      <div class="flex flex-wrap items-center gap-4 sm:gap-6 text-slate-600">
+        <a href="/privacy" class="hover:text-slate-900 transition-colors">Privacy</a>
         <span>•</span>
-        <a href="/terms" class="hover:text-white transition-colors">Terms</a>
+        <a href="/terms" class="hover:text-slate-900 transition-colors">Terms</a>
         <span>•</span>
-        <a href="/security" class="hover:text-white transition-colors">Security</a>
+        <a href="/security" class="hover:text-slate-900 transition-colors">Security</a>
         <span>•</span>
-        <a href="/contact" class="hover:text-white transition-colors">Contact</a>
+        <a href="/contact" class="hover:text-slate-900 transition-colors">Contact</a>
       </div>
     </div>
   </div>

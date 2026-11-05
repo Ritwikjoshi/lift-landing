@@ -10,18 +10,18 @@ import Footer from "../components/Footer.astro";
 >
   <Navbar />
   
-  <main class="flex-1 py-16 sm:py-24">
+  <main class="flex-1 py-16 sm:py-24 bg-[#f8fafc]">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
       
       <!-- Section 34: Header -->
       <div class="text-center max-w-3xl mx-auto space-y-4">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-semibold uppercase tracking-wider">
           Transaction Confidentiality
         </div>
-        <h1 class="text-3xl sm:text-5xl font-bold text-white font-heading tracking-tight">
+        <h1 class="text-3xl sm:text-5xl font-bold text-slate-900 font-heading tracking-tight">
           Built for confidential transactions.
         </h1>
-        <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
           Due diligence involves sensitive financial, legal, corporate and commercial information. LIFT is designed around controlled access, complete traceability and institutional confidentiality.
         </p>
       </div>
@@ -29,32 +29,32 @@ import Footer from "../components/Footer.astro";
       <!-- Core Security Mechanics (Sanitized as per Section 34 & 58) -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        <div class="glass-panel-glow rounded-2xl p-6 border border-emerald-500/20 space-y-3">
-          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 font-mono font-bold text-base flex items-center justify-center border border-emerald-500/20">
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 font-mono font-bold text-base flex items-center justify-center border border-emerald-200">
             🔒
           </div>
-          <h3 class="text-base font-bold text-white font-heading">Cryptographic Tenant Isolation</h3>
-          <p class="text-xs text-slate-300 leading-relaxed">
+          <h3 class="text-base font-bold text-slate-900 font-heading">Cryptographic Tenant Isolation</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
             Every transaction environment operates within strict tenant boundaries. Deal room files, cap tables, and audit annotations are partitioned to eliminate cross-tenant data leakage risks.
           </p>
         </div>
 
-        <div class="glass-panel-glow rounded-2xl p-6 border border-violet-500/20 space-y-3">
-          <div class="w-10 h-10 rounded-xl bg-violet-500/10 text-violet-400 font-mono font-bold text-base flex items-center justify-center border border-violet-500/20">
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-violet-50 text-violet-700 font-mono font-bold text-base flex items-center justify-center border border-violet-200">
             🛡️
           </div>
-          <h3 class="text-base font-bold text-white font-heading">Granular Role-Based Access</h3>
-          <p class="text-xs text-slate-300 leading-relaxed">
+          <h3 class="text-base font-bold text-slate-900 font-heading">Granular Role-Based Access</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
             Multi-tier permission policies ensure that external specialists (e.g. tech reviewers or IP lawyers) can only access authorized file subsets, with no access to unrelated financial or tax records.
           </p>
         </div>
 
-        <div class="glass-panel-glow rounded-2xl p-6 border border-purple-500/20 space-y-3">
-          <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 font-mono font-bold text-base flex items-center justify-center border border-purple-500/20">
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-700 font-mono font-bold text-base flex items-center justify-center border border-purple-200">
             📜
           </div>
-          <h3 class="text-base font-bold text-white font-heading">Immutable Audit Trails</h3>
-          <p class="text-xs text-slate-300 leading-relaxed">
+          <h3 class="text-base font-bold text-slate-900 font-heading">Immutable Audit Trails</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
             Every file inspection, query submission, checklist confirmation, and report generation is logged with user identity, exact timestamp, and IP verification for institutional auditability.
           </p>
         </div>
@@ -62,37 +62,37 @@ import Footer from "../components/Footer.astro";
       </div>
 
       <!-- Detailed Defense Specifications -->
-      <div class="glass-panel rounded-3xl p-8 sm:p-10 border border-white/10 space-y-8">
-        <h2 class="text-2xl font-bold text-white font-heading">
+      <div class="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-md space-y-8">
+        <h2 class="text-2xl font-bold text-slate-900 font-heading">
           Technical Safeguards & Information Governance
         </h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
           
-          <div class="p-5 rounded-2xl bg-slate-900/60 border border-white/5 space-y-2">
-            <div class="text-sm font-semibold text-emerald-300">Dynamically Watermarked Document Rendering</div>
-            <p class="text-slate-300 leading-relaxed">
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+            <div class="text-sm font-bold text-emerald-800">Dynamically Watermarked Document Rendering</div>
+            <p class="text-slate-600 leading-relaxed">
               When confidential agreements or financials are viewed in the browser, an indelible diagonal watermark is dynamically rendered featuring the viewer's verified email, IP address, and exact session timestamp.
             </p>
           </div>
 
-          <div class="p-5 rounded-2xl bg-slate-900/60 border border-white/5 space-y-2">
-            <div class="text-sm font-semibold text-violet-300">Zero Model-Training Retention</div>
-            <p class="text-slate-300 leading-relaxed">
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+            <div class="text-sm font-bold text-violet-800">Zero Model-Training Retention</div>
+            <p class="text-slate-600 leading-relaxed">
               Technology-assisted document parsing operates inside isolated execution runtimes. Customer transaction data and confidential filings are strictly never used to train public or commercial AI models.
             </p>
           </div>
 
-          <div class="p-5 rounded-2xl bg-slate-900/60 border border-white/5 space-y-2">
-            <div class="text-sm font-semibold text-purple-300">Document Version & Download Controls</div>
-            <p class="text-slate-300 leading-relaxed">
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+            <div class="text-sm font-bold text-purple-800">Document Version & Download Controls</div>
+            <p class="text-slate-600 leading-relaxed">
               Deal administrators maintain centralized authority over file download allowances, print permissions, and revocation of access links whenever transaction stages conclude.
             </p>
           </div>
 
-          <div class="p-5 rounded-2xl bg-slate-900/60 border border-white/5 space-y-2">
-            <div class="text-sm font-semibold text-blue-300">Continuous Security Reviews</div>
-            <p class="text-slate-300 leading-relaxed">
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2">
+            <div class="text-sm font-bold text-blue-800">Continuous Security Reviews</div>
+            <p class="text-slate-600 leading-relaxed">
               Continuous code analysis and vulnerability assessments are integrated into our engineering pipeline. External infrastructure evaluations are performed systematically to uphold transaction integrity.
             </p>
           </div>
@@ -100,22 +100,22 @@ import Footer from "../components/Footer.astro";
         </div>
 
         <!-- Section 34 & 58 Verified Notice -->
-        <div class="p-4 rounded-xl bg-white/5 border border-white/10 text-[11px] text-slate-400 leading-relaxed">
-          <span class="text-slate-200 font-semibold">Security Governance Notice:</span>
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-[11px] text-slate-600 leading-relaxed">
+          <span class="text-slate-900 font-bold">Security Governance Notice:</span>
           LIFT applies institutional information security standards across encryption in transit and at rest, access controls, and operational separation. Formal third-party attestation reports and independent audit certifications are reviewed systematically with qualified enterprise stakeholders under non-disclosure agreements.
         </div>
       </div>
 
       <!-- Security Inquiries -->
-      <div class="text-center pt-8 border-t border-white/10 space-y-3">
-        <h3 class="text-xl font-bold text-white font-heading">
+      <div class="text-center pt-8 border-t border-slate-200 space-y-3">
+        <h3 class="text-xl font-bold text-slate-900 font-heading">
           Confidentiality or Security Questions?
         </h3>
-        <p class="text-xs text-slate-400">
+        <p class="text-xs text-slate-500">
           Our security architecture team is available for technical reviews:
         </p>
         <div class="pt-2">
-          <a href="mailto:security@lift.business" class="px-5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-emerald-400 font-mono text-xs hover:text-emerald-300 hover:bg-white/10 transition-all inline-block">
+          <a href="mailto:security@lift.business" class="px-5 py-2.5 rounded-xl bg-white border border-slate-200 text-emerald-700 font-mono text-xs hover:bg-slate-50 shadow-xs transition-all inline-block font-semibold">
             security@lift.business
           </a>
         </div>
