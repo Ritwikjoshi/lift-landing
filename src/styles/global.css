@@ -1,9 +1,64 @@
 @import "tailwindcss";
 
+:root {
+  /* Primary Palette */
+  --color-primary: #8b5cf6;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #5b21b6;
+  --color-primary-container: rgba(139, 92, 246, 0.15);
+
+  /* Functional & Semantic Accents */
+  --color-secondary: #3b82f6;
+  --color-tertiary: #f472b6;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+
+  /* Surfaces & Neutrals (Light Theme) */
+  --color-background: #f8fafc;
+  --color-on-background: #0f172a;
+  --color-on-surface: #1e293b;
+  --color-on-surface-variant: #64748b;
+  --color-outline: rgba(15, 23, 42, 0.2);
+  --color-outline-variant: rgba(15, 23, 42, 0.1);
+
+  /* Gradients & Ambient Effects */
+  --gradient-primary: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%);
+  --gradient-executive: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  --gradient-staggering: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%);
+  --gradient-ambient: radial-gradient(circle at top right, rgba(139, 92, 246, 0.08), transparent 40%),
+                     radial-gradient(circle at bottom left, rgba(59, 130, 246, 0.08), transparent 40%);
+
+  /* Typography Variables */
+  --font-outfit: 'Outfit', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-jetbrains-mono: 'JetBrains Mono', monospace;
+}
+
 body {
   background-color: #070913;
   color: #f1f5f9;
   overflow-x: hidden;
+}
+
+/* Glassmorphic Surface System */
+.glass {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+.glass-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
 }
 
 .glass-panel {
@@ -13,11 +68,22 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.glass-panel-light {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.07);
+}
+
 .glass-panel-glow {
-  background: radial-gradient(circle at top left, rgba(99, 102, 241, 0.12), transparent 70%), rgba(13, 18, 33, 0.78);
+  background: radial-gradient(circle at top left, rgba(139, 92, 246, 0.14), transparent 70%), rgba(13, 18, 33, 0.78);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(129, 140, 248, 0.22);
+  border: 1px solid rgba(139, 92, 246, 0.22);
 }
 
 ::-webkit-scrollbar {
@@ -44,3 +110,46 @@ body {
   }
 }
 
+/* Animations & Brand Utilities */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animation-delay-100 { animation-delay: 100ms; }
+.animation-delay-200 { animation-delay: 200ms; }
+.animation-delay-300 { animation-delay: 300ms; }
+
+.gradient-brand {
+  background: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%);
+}
+
+.text-gradient-brand {
+  background: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%);
+  color: #ffffff;
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.45);
+  transition: all 0.2s ease;
+}
+.btn-primary:hover {
+  box-shadow: 0 0 35px rgba(139, 92, 246, 0.7);
+  transform: translateY(-1px);
+}
+.btn-primary:active {
+  transform: scale(0.98);
+}
